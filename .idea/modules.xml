@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/jxg/jxg.iml" filepath="$PROJECT_DIR$/jxg/jxg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pocket-car-fixing.iml" filepath="$PROJECT_DIR$/pocket-car-fixing.iml" />
     </modules>
   </component>
 </project>
