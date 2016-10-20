@@ -59,7 +59,7 @@ import butterknife.Bind;
 import butterknife.OnClick;
 
 /**
- * 订单详情
+ * 订单详情,三级页面，提交订单后查看订单详情
  *
  * Created by snox on 2015/12/8.
  */

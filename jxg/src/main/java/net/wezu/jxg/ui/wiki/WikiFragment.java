@@ -1,21 +1,18 @@
 package net.wezu.jxg.ui.wiki;
 
 import android.os.Bundle;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 
 import net.wezu.jxg.R;
 import net.wezu.jxg.data.RequestManager;
 import net.wezu.jxg.service.ServiceAddressConstant;
-import net.wezu.jxg.ui.base.BaseActivity;
 import net.wezu.jxg.ui.base.BaseFragment;
-import net.wezu.jxg.ui.base.BaseListFragment;
 
 import butterknife.Bind;
 
 /**
- * Created by snox on 2016/1/10.
+ * Created by i310736(Yaming.Zhao@sap.com) on 11/10/2016.
  */
+
 public class WikiFragment extends BaseFragment {
 
     @Bind(R.id.wv) ProgressWebView webView;
