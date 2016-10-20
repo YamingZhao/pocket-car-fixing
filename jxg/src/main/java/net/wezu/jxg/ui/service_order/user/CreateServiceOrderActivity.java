@@ -25,26 +25,26 @@ import com.baidu.mapapi.search.geocode.OnGetGeoCoderResultListener;
 import com.baidu.mapapi.search.geocode.ReverseGeoCodeOption;
 import com.baidu.mapapi.search.geocode.ReverseGeoCodeResult;
 
+import net.wezu.framework.util.ToastUtils;
+import net.wezu.jxg.R;
+import net.wezu.jxg.data.RequestManager;
+import net.wezu.jxg.model.OrderEntity;
+import net.wezu.jxg.model.Product;
 import net.wezu.jxg.model.ServicesAndCars;
+import net.wezu.jxg.model.UserCar;
+import net.wezu.jxg.service.ServiceOrderService;
 import net.wezu.jxg.ui.SelectPictureDialog;
+import net.wezu.jxg.ui.base.BaseActivity;
 import net.wezu.jxg.ui.map.AddressInformation;
 import net.wezu.jxg.ui.map.BaiduMapPoiSearchActivity;
 import net.wezu.jxg.ui.payment.WXUtil;
 import net.wezu.jxg.ui.service_order.ServiceOrderDetailActivity;
 import net.wezu.jxg.util.FastClickUtil;
+import net.wezu.jxg.util.NumicUtil;
+import net.wezu.widget.RoundImageview.RoundedImageView;
 import net.wezu.widget.dialog.ChoiceDialog;
 import net.wezu.widget.dialog.CustomProgressDialog;
 import net.wezu.widget.dialog.DialogUtil;
-import net.wezu.framework.util.ToastUtils;
-import net.wezu.widget.RoundImageview.RoundedImageView;
-import net.wezu.jxg.R;
-import net.wezu.jxg.service.ServiceOrderService;
-import net.wezu.jxg.data.RequestManager;
-import net.wezu.jxg.model.OrderEntity;
-import net.wezu.jxg.model.Product;
-import net.wezu.jxg.model.UserCar;
-import net.wezu.jxg.ui.base.BaseActivity;
-import net.wezu.jxg.util.NumicUtil;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -59,10 +59,10 @@ import butterknife.Bind;
 import butterknife.OnClick;
 
 /**
- * 创建服务订单
- *
- * Created by snox on 2015/11/14.
+ * Created by i310736(Yaming.Zhao@sap.com) on 9/10/2016.
+ * 创建服务订单，二级页面（点击某个功能点后进入的创建订单页面）
  */
+
 public class CreateServiceOrderActivity extends BaseActivity {
 
     private static final String SERVICE_TYPE = "service_type";
@@ -85,7 +85,8 @@ public class CreateServiceOrderActivity extends BaseActivity {
     private LocationClient locationClient;
     //private BDLocation location;
 
-    @Bind(R.id.tv_description) TextView txtDescription;
+    @Bind(R.id.tv_description)
+    TextView txtDescription;
     @Bind(R.id.txt_province) TextView txtProvince;
     @Bind(R.id.tv_city) TextView txtCity;
     @Bind(R.id.txt_district) TextView txtDistrict;
@@ -97,12 +98,15 @@ public class CreateServiceOrderActivity extends BaseActivity {
 
     @Bind(R.id.txt_amount) TextView txtAmount;
 
-    @Bind(R.id.ll_service_date) View layoutServiceDate;
+    @Bind(R.id.ll_service_date)
+    View layoutServiceDate;
     @Bind(R.id.txt_service_date) TextView txtServiceDate;
 
-    @Bind(R.id.txt_remark) EditText edtRemark;
+    @Bind(R.id.txt_remark)
+    EditText edtRemark;
 
-    @Bind(R.id.image_upload_1) RoundedImageView imageUpload1;
+    @Bind(R.id.image_upload_1)
+    RoundedImageView imageUpload1;
     @Bind(R.id.image_upload_2) RoundedImageView imageUpload2;
     @Bind(R.id.image_upload_3) RoundedImageView imageUpload3;
 
@@ -146,7 +150,7 @@ public class CreateServiceOrderActivity extends BaseActivity {
                         .putExtra(CreateServiceOrderActivity.SERVICE_TYPE, serviceType)
                         .putExtra(CreateServiceOrderActivity.CATEGORY_NAME, categoryName)
                         .putExtra(CreateServiceOrderActivity.CAR_AND_PRODUCT, result));
-                        //.putExtra(CreateServiceOrderActivity.CATEGORY_DESCRIPTION, description)
+                //.putExtra(CreateServiceOrderActivity.CATEGORY_DESCRIPTION, description)
             }
 
             @Override

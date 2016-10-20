@@ -61,6 +61,7 @@ public class LocationReportService extends Service {
         option.disableCache(true);
         option.setLocationMode(LocationClientOption.LocationMode.Hight_Accuracy);
         option.setIsNeedAddress(true);
+        option.setIgnoreKillProcess(false);
 
         locationClient.setLocOption(option);
 

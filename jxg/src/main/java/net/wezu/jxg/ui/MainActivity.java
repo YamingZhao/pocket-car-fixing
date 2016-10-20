@@ -16,7 +16,7 @@ import net.wezu.jxg.data.RequestManager;
 import net.wezu.jxg.service.UserService;
 import net.wezu.jxg.ui.base.BaseActivity;
 import net.wezu.jxg.ui.base.FragmentPagerAdapter;
-import net.wezu.jxg.ui.service_order.user.ServiceFragment;
+import net.wezu.jxg.ui.service_order.user.ServicesFragment;
 import net.wezu.jxg.ui.user.PersonInformationFragment;
 import net.wezu.jxg.ui.service_order.worker.WorkerServiceFragment;
 import net.wezu.jxg.ui.wiki.WikiFragment;
@@ -97,7 +97,7 @@ public class MainActivity extends BaseActivity {
 
         boolean worker = Application.getInstance().isWorkerPackage();
 
-        adapter.addFragment("口袋e修", R.mipmap.nav_icon_1, worker ? new WorkerServiceFragment() : new ServiceFragment());
+        adapter.addFragment("口袋e修", R.mipmap.nav_icon_1, worker ? new WorkerServiceFragment() : new ServicesFragment());
         //adapter.addFragment("商城", R.mipmap.nav_icon_2, new ProductCategoryFragment()); // UnderConstructionFragment());
         adapter.addFragment("商城", R.mipmap.nav_icon_2, new  UnderConstructionFragment());
         adapter.addFragment("购物车", R.mipmap.nav_icon_3, new UnderConstructionFragment());
