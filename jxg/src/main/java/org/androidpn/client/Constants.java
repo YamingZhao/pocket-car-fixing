@@ -26,11 +26,11 @@ public class Constants {
 
     public static final String XMPP_PASSWORD = "XMPP_PASSWORD";
 
-    public static final String XMPP_PASSWORD_TEST = "NO_USE_1";
-
     // public static final String USER_KEY = "USER_KEY";
 
     public static final String DEVICE_ID = "DEVICE_ID";
+
+    public static final String DEVICE_ID2 = "DEVICE_ID22";
 
     public static final String EMULATOR_DEVICE_ID = "EMULATOR_DEVICE_ID";
 
