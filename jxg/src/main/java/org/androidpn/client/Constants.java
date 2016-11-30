@@ -28,8 +28,6 @@ public class Constants {
 
     public static final String XMPP_PASSWORD_TEST = "NO_USE_1";
 
-    public static final String XMPP_PASSWORD_TEST4 = "NO_USE_4";
-
     // public static final String USER_KEY = "USER_KEY";
 
     public static final String DEVICE_ID = "DEVICE_ID";
