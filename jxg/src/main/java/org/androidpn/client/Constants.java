@@ -46,6 +46,10 @@ public class Constants {
 
     public static final String NOTIFICATION = "NOTIFICATION";
 
+    public static final String NOTIFICATIONTEST = "NOTIFICATIONNOSU";
+
+    public static final String NOTIFICATIONTEST2 = "NOTIFICATIONNOSU2";
+
     // INTENT ACTIONS
 
     public static final String ACTION_SHOW_NOTIFICATION = "org.androidpn.client.SHOW_NOTIFICATION";
