@@ -30,8 +30,6 @@ public class Constants {
 
     public static final String DEVICE_ID = "DEVICE_ID";
 
-    public static final String DEVICE_ID2 = "DEVICE_ID22";
-
     public static final String EMULATOR_DEVICE_ID = "EMULATOR_DEVICE_ID";
 
     public static final String NOTIFICATION_ICON = "NOTIFICATION_ICON";
